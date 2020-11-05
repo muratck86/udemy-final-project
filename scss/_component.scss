@@ -1,0 +1,81 @@
+.page-logo{
+    height: 3rem;
+    &:hover{
+        animation: rotate 1.5s ease-in-out infinite;
+        // transform: rotate(1turn);
+        // transition: 1s ease-in-out 1s infinite;
+    }
+}
+
+.header__title{
+    font-size: 2rem;
+    color: white;
+    animation: to-right 1s;
+    transform-origin: right;
+}
+
+.header__subtitle{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    animation: to-left 1s;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: $main-color;
+    border-radius: 100px;
+    padding: .25rem 1.2rem;
+    outline: none;
+    border: none;
+    &:hover{
+        background-color: $main-color-light;
+        color: white;
+    }
+    animation: come-out 1s ease-out;
+}
+
+.down--icon{
+    position: absolute;
+    width: 2.5rem;
+    bottom: 1rem;
+    animation: hop 0.5s alternate infinite;
+}
+
+.portfolio--card{
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    border: 1px solid $main-font-color;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 1;
+    &:hover{
+        transform: scale(1.1);
+        transition: .5s ease-in-out;
+        }
+
+    &-java{
+        background-image: linear-gradient(to right bottom,
+            rgba(white, .5) ,
+            rgba(white, .9)),
+            url(/img/java.jpg);
+    }
+
+    &-nodejs{
+        background-image: linear-gradient(to right bottom,
+            rgba(white, .5) ,
+            rgba(white, .9)),
+            url(/img/nodejs.jpg);
+    }
+    &-flutter{
+        background-image: linear-gradient(to right bottom,
+            rgba(white, .5) ,
+            rgba(white, .9)),
+            url(/img/flutter.jpg);
+
+    }
+}
